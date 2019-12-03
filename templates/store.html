@@ -2,25 +2,25 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}">
 </head>
 <body>
 	<h1>buy a wonderfull new yoga mat!</h1>
-	<a href="home.html">homepage</a>
+	<a href="{{url_for('home')}}">homepage</a>
 	<div class="card">
-  <img src="M1.gif" alt="purple matt" style="width:10%">
+  <img src="{{url_for('static', filename='M1.gif')}}" alt="purple matt" style="width:10%">
   <h1>china Yoga mattress</h1>
   <p class="price">$49.99</p>
   <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
+  <a href="/cart"><button>Add to Cart</button></a>
 </div>
 	
 	<div class="card">
-  <img src="M2.jpg" alt="colorful mat" style="width:10%">
+  <img src="{{url_for('static', filename='M2.jpg')}}" alt="colorful mat" style="width:10%">
   <h1>china Yoga mattress</h1>
   <p class="price">$49.99</p>
   <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
+  <a href="/cart"><button>Add to Cart</button></a>
 </div>
 </body>
 </html>
